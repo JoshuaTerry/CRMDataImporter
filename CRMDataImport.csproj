@@ -1,0 +1,249 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{95180EEE-54D2-4793-AC07-0E369B242E25}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CRMDataImport</RootNamespace>
+    <AssemblyName>CRMDataImport</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="log4net, Version=1.2.12.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\log4net.2.0.2\lib\net40-full\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="microsoft.crm.sdk.proxy">
+      <HintPath>..\..\Resources\microsoft.crm.sdk.proxy.dll</HintPath>
+    </Reference>
+    <Reference Include="microsoft.xrm.sdk">
+      <HintPath>..\..\Resources\microsoft.xrm.sdk.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ActionContext.cs" />
+    <Compile Include="ActionGenerators\ActivityGenerator.cs" />
+    <Compile Include="ActionGenerators\ActivityStateChangeGenerator.cs" />
+    <Compile Include="ActionGenerators\OwnerAssignmentGenerator.cs" />
+    <Compile Include="ActionGenerators\UserUpdateActionGenerator.cs" />
+    <Compile Include="ActionGenerators\UserImportActionGenerator.cs" />
+    <Compile Include="ActionGenerators\IncidentStatusChangeGenerator.cs" />
+    <Compile Include="ActionGenerators\OpportunityStatusChangeGenerator.cs" />
+    <Compile Include="ActionGenerators\PromotionCodeOptionSetGenerator.cs" />
+    <Compile Include="ActionGenerators\QuoteStatusChangeActionGenerator.cs" />
+    <Compile Include="ActionGenerators\AccountStatusChangeGenerator.cs" />
+    <Compile Include="ActionGenerators\UserRoleAddGenerator.cs" />
+    <Compile Include="ActionList.cs" />
+    <Compile Include="CommonDictionaries.cs" />
+    <Compile Include="Mappers\AccountMapper.cs" />
+    <Compile Include="Authentication\AuthenticationHelper.cs" />
+    <Compile Include="Authentication\CrmConnectionInfo.cs" />
+    <Compile Include="Authentication\DeviceIdManager.cs" />
+    <Compile Include="Common.cs" />
+    <Compile Include="IActionGenerator.cs" />
+    <Compile Include="ActionGenerators\ImportQueryActionGenerator.cs" />
+    <Compile Include="CRMInstanceConnectionInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CRMInstanceConnectionInfo.Designer.cs">
+      <DependentUpon>CRMInstanceConnectionInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DatabaseConnectionInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DatabaseConnectionInfo.Designer.cs">
+      <DependentUpon>DatabaseConnectionInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataMigration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataMigration.Designer.cs">
+      <DependentUpon>DataMigration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LogSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LogSettings.Designer.cs">
+      <DependentUpon>LogSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mappers\Activities\AppointmentMapper.cs" />
+    <Compile Include="Mappers\AgentAreaCodeMapper.cs" />
+    <Compile Include="Mappers\DummyMapper.cs" />
+    <Compile Include="Mappers\Activities\EmailMapper.cs" />
+    <Compile Include="Mappers\Activities\FaxMapper.cs" />
+    <Compile Include="Mappers\IncidentMapper.cs" />
+    <Compile Include="Mappers\IncidentResolutionMapper.cs" />
+    <Compile Include="Mappers\KbArticleTemplateMapper.cs" />
+    <Compile Include="Mappers\Activities\LetterMapper.cs" />
+    <Compile Include="Mappers\NotesMapper.cs" />
+    <Compile Include="Mappers\Activities\PhoneCallMapper.cs" />
+    <Compile Include="Mappers\OpportunityCompetitorMapper.cs" />
+    <Compile Include="Mappers\QueueItemMapper.cs" />
+    <Compile Include="Mappers\QueueMapper.cs" />
+    <Compile Include="Mappers\QuoteCloseMapper.cs" />
+    <Compile Include="Mappers\QuoteDetailMapper.cs" />
+    <Compile Include="Mappers\PriceListMapper.cs" />
+    <Compile Include="Mappers\DiscountMapper.cs" />
+    <Compile Include="Mappers\DiscountTypeMapper.cs" />
+    <Compile Include="Mappers\KBArticleMapper.cs" />
+    <Compile Include="Mappers\MapperBase.cs" />
+    <Compile Include="Mappers\AddressMapper.cs" />
+    <Compile Include="Mappers\CompetitorMapper.cs" />
+    <Compile Include="Mappers\ContactMapper.cs" />
+    <Compile Include="Mappers\OpportunityCloseMapper.cs" />
+    <Compile Include="Mappers\OpportunityMapper.cs" />
+    <Compile Include="Mappers\OpportunityProductMapper.cs" />
+    <Compile Include="Mappers\PriceListProductMapper.cs" />
+    <Compile Include="Mappers\ProductMapper.cs" />
+    <Compile Include="Mappers\QuoteMapper.cs" />
+    <Compile Include="Mappers\SubjectMapper.cs" />
+    <Compile Include="Mappers\Activities\TaskMapper.cs" />
+    <Compile Include="Mappers\UoMMapper.cs" />
+    <Compile Include="Mappers\UoMScheduleMapper.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Project.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RequiredEntities.cs" />
+    <Compile Include="ActionGenerators\ContactStatusChangeGenerator.cs" />
+    <Compile Include="ActionGenerators\StatusChangeGeneratorBase.cs" />
+    <Compile Include="StaticDictionaries.cs" />
+    <Compile Include="Tasks\AddSubjectHierarchyTask.cs" />
+    <Compile Include="Tasks\DeleteAllSubjectsTask.cs" />
+    <Compile Include="Tasks\EmailAttachmentImportTask.cs" />
+    <Compile Include="ThreadActionContext.cs" />
+    <EmbeddedResource Include="CRMInstanceConnectionInfo.resx">
+      <DependentUpon>CRMInstanceConnectionInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DatabaseConnectionInfo.resx">
+      <DependentUpon>DatabaseConnectionInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataMigration.resx">
+      <DependentUpon>DataMigration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LogSettings.resx">
+      <DependentUpon>LogSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Entities\Entities.csproj">
+      <Project>{20a39252-1c76-46ee-99ff-f747370bec50}</Project>
+      <Name>Entities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfRecentProject xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <RecentProject>
+    <FilePath>C:\Users\jterry\Desktop\CRMMig.xml</FilePath>
+  </RecentProject>
+  <RecentProject>
+    <FilePath>C:\Users\jterry\Desktop\CRMTst.xml</FilePath>
+  </RecentProject>
+  <RecentProject>
+    <FilePath>C:\Users\jterry\Desktop\CRMTESTINT.xml</FilePath>
+  </RecentProject>
+  <RecentProject>
+    <FilePath>C:\Users\jterry\Desktop\CRMPRD.xml</FilePath>
+  </RecentProject>
+  <RecentProject>
+    <FilePath>C:\Users\jterry\Desktop\CRMPRE.xml</FilePath>
+  </RecentProject>
+</ArrayOfRecentProject>

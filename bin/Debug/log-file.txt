@@ -1,0 +1,112 @@
+2014-03-30 18:08:27,711 [17] ERROR MapperBase [(null)] - Exception in MapperBase generated action. Reader Values e0249904-ee6b-e211-9f28-000bcdcd8b77,
+Microsoft.Xrm.Sdk.SaveChangesException: An error occured while processing this request. ---> System.ServiceModel.FaultException`1[Microsoft.Xrm.Sdk.OrganizationServiceFault]: SQL timeout expired.
+
+Server stack trace: 
+   at System.ServiceModel.Channels.ServiceChannel.HandleReply(ProxyOperationRuntime operation, ProxyRpc& rpc)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   at System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at Microsoft.Xrm.Sdk.IOrganizationService.Execute(OrganizationRequest request)
+   at Microsoft.Xrm.Sdk.Client.OrganizationServiceProxy.ExecuteCore(OrganizationRequest request)
+   at Microsoft.Xrm.Sdk.Client.OrganizationServiceProxy.Execute(OrganizationRequest request)
+   at Microsoft.Xrm.Sdk.Client.OrganizationServiceContext.Execute(OrganizationRequest request)
+   at Microsoft.Xrm.Sdk.Client.OrganizationServiceContext.SaveChange(OrganizationRequest request, IList`1 results)
+   --- End of inner exception stack trace ---
+   at Microsoft.Xrm.Sdk.Client.OrganizationServiceContext.SaveChanges(SaveChangesOptions options)
+   at Microsoft.Xrm.Sdk.Client.OrganizationServiceContext.SaveChanges()
+   at CRMDataImport.Mappers.MapperBase`1.<>c__DisplayClass9.<GetActions>b__1(IOrganizationService service, CrmContext context) in c:\Users\jterry\Documents\code.allegient.com\Our Sunday Visitor\Crm\CRMDataImportTest\Mappers\MapperBase.cs:line 115
+2014-03-30 18:08:27,711 [9] ERROR MapperBase [(null)] - Exception in MapperBase generated action. Reader Values 6e8a8ce8-ee6b-e211-9f28-000bcdcd8b77,
+Microsoft.Xrm.Sdk.SaveChangesException: An error occured while processing this request. ---> System.ServiceModel.FaultException`1[Microsoft.Xrm.Sdk.OrganizationServiceFault]: SQL timeout expired.
+
+Server stack trace: 
+   at System.ServiceModel.Channels.ServiceChannel.HandleReply(ProxyOperationRuntime operation, ProxyRpc& rpc)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   at System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at Microsoft.Xrm.Sdk.IOrganizationService.Execute(OrganizationRequest request)
+   at Microsoft.Xrm.Sdk.Client.OrganizationServiceProxy.ExecuteCore(OrganizationRequest request)
+   at Microsoft.Xrm.Sdk.Client.OrganizationServiceProxy.Execute(OrganizationRequest request)
+   at Microsoft.Xrm.Sdk.Client.OrganizationServiceContext.Execute(OrganizationRequest request)
+   at Microsoft.Xrm.Sdk.Client.OrganizationServiceContext.SaveChange(OrganizationRequest request, IList`1 results)
+   --- End of inner exception stack trace ---
+   at Microsoft.Xrm.Sdk.Client.OrganizationServiceContext.SaveChanges(SaveChangesOptions options)
+   at Microsoft.Xrm.Sdk.Client.OrganizationServiceContext.SaveChanges()
+   at CRMDataImport.Mappers.MapperBase`1.<>c__DisplayClass9.<GetActions>b__1(IOrganizationService service, CrmContext context) in c:\Users\jterry\Documents\code.allegient.com\Our Sunday Visitor\Crm\CRMDataImportTest\Mappers\MapperBase.cs:line 115
+2014-03-30 18:08:27,795 [17] ERROR CRMDataImport.DataMigration [(null)] - An error occured while processing this request.
+Microsoft.Xrm.Sdk.SaveChangesException: An error occured while processing this request. ---> System.ServiceModel.FaultException`1[Microsoft.Xrm.Sdk.OrganizationServiceFault]: SQL timeout expired.
+
+Server stack trace: 
+   at System.ServiceModel.Channels.ServiceChannel.HandleReply(ProxyOperationRuntime operation, ProxyRpc& rpc)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   at System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at Microsoft.Xrm.Sdk.IOrganizationService.Execute(OrganizationRequest request)
+   at Microsoft.Xrm.Sdk.Client.OrganizationServiceProxy.ExecuteCore(OrganizationRequest request)
+   at Microsoft.Xrm.Sdk.Client.OrganizationServiceProxy.Execute(OrganizationRequest request)
+   at Microsoft.Xrm.Sdk.Client.OrganizationServiceContext.Execute(OrganizationRequest request)
+   at Microsoft.Xrm.Sdk.Client.OrganizationServiceContext.SaveChange(OrganizationRequest request, IList`1 results)
+   --- End of inner exception stack trace ---
+   at Microsoft.Xrm.Sdk.Client.OrganizationServiceContext.SaveChanges(SaveChangesOptions options)
+   at Microsoft.Xrm.Sdk.Client.OrganizationServiceContext.SaveChanges()
+   at CRMDataImport.Mappers.MapperBase`1.<>c__DisplayClass9.<GetActions>b__1(IOrganizationService service, CrmContext context) in c:\Users\jterry\Documents\code.allegient.com\Our Sunday Visitor\Crm\CRMDataImportTest\Mappers\MapperBase.cs:line 132
+   at CRMDataImport.DataMigration.<>c__DisplayClass17.<ExecuteActionsParallelOnContextPerThread>b__13(Action`2 a) in c:\Users\jterry\Documents\code.allegient.com\Our Sunday Visitor\Crm\CRMDataImportTest\DataMigration.cs:line 430
+2014-03-30 18:08:27,822 [9] ERROR CRMDataImport.DataMigration [(null)] - An error occured while processing this request.
+Microsoft.Xrm.Sdk.SaveChangesException: An error occured while processing this request. ---> System.ServiceModel.FaultException`1[Microsoft.Xrm.Sdk.OrganizationServiceFault]: SQL timeout expired.
+
+Server stack trace: 
+   at System.ServiceModel.Channels.ServiceChannel.HandleReply(ProxyOperationRuntime operation, ProxyRpc& rpc)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   at System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at Microsoft.Xrm.Sdk.IOrganizationService.Execute(OrganizationRequest request)
+   at Microsoft.Xrm.Sdk.Client.OrganizationServiceProxy.ExecuteCore(OrganizationRequest request)
+   at Microsoft.Xrm.Sdk.Client.OrganizationServiceProxy.Execute(OrganizationRequest request)
+   at Microsoft.Xrm.Sdk.Client.OrganizationServiceContext.Execute(OrganizationRequest request)
+   at Microsoft.Xrm.Sdk.Client.OrganizationServiceContext.SaveChange(OrganizationRequest request, IList`1 results)
+   --- End of inner exception stack trace ---
+   at Microsoft.Xrm.Sdk.Client.OrganizationServiceContext.SaveChanges(SaveChangesOptions options)
+   at Microsoft.Xrm.Sdk.Client.OrganizationServiceContext.SaveChanges()
+   at CRMDataImport.Mappers.MapperBase`1.<>c__DisplayClass9.<GetActions>b__1(IOrganizationService service, CrmContext context) in c:\Users\jterry\Documents\code.allegient.com\Our Sunday Visitor\Crm\CRMDataImportTest\Mappers\MapperBase.cs:line 132
+   at CRMDataImport.DataMigration.<>c__DisplayClass17.<ExecuteActionsParallelOnContextPerThread>b__13(Action`2 a) in c:\Users\jterry\Documents\code.allegient.com\Our Sunday Visitor\Crm\CRMDataImportTest\DataMigration.cs:line 430
+2014-03-31 14:16:24,767 [3] ERROR CRMDataImport.DataMigration [(null)] - Exception:Invalid column name 'allgnt_PostMigrationDeactivate'.
+System.Data.SqlClient.SqlException (0x80131904): Invalid column name 'allgnt_PostMigrationDeactivate'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader()
+   at CRMDataImport.ActionGenerators.ImportQueryActionGenerator.GetActions() in c:\Users\jterry\Documents\code.allegient.com\Our Sunday Visitor\Crm\CRMDataImportTest\ActionGenerators\ImportQueryActionGenerator.cs:line 60
+   at CRMDataImport.DataMigration.<>c__DisplayClass10.<ImportEntities_Click>b__e(Object caller, DoWorkEventArgs args) in c:\Users\jterry\Documents\code.allegient.com\Our Sunday Visitor\Crm\CRMDataImportTest\DataMigration.cs:line 328
+ClientConnectionId:5d9c384d-6130-490b-95a1-d1cd1ade1fc0
+2014-03-31 15:46:24,782 [16] ERROR CRMDataImport.DataMigration [(null)] - Cannot access a disposed object.
+Object name: 'DataMigration'.
+System.ObjectDisposedException: Cannot access a disposed object.
+Object name: 'DataMigration'.
+   at System.Windows.Forms.Control.MarshaledInvoke(Control caller, Delegate method, Object[] args, Boolean synchronous)
+   at System.Windows.Forms.Control.Invoke(Delegate method, Object[] args)
+   at CRMDataImport.DataMigration.UpdateRowCount(Int32 count)
+   at CRMDataImport.DataMigration.<>c__DisplayClass17.<ExecuteActionsParallelOnContextPerThread>b__13(Action`2 a)
+2014-04-01 01:08:43,714 [6] ERROR CRMDataImport.DataMigration [(null)] - Exception:The wait operation timed out
+System.ComponentModel.Win32Exception (0x80004005): The wait operation timed out

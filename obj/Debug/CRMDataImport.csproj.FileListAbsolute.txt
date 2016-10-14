@@ -1,0 +1,23 @@
+C:\Users\jterry\Documents\code.allegient.com\Our Sunday Visitor\Crm\CRMDataImportTest\bin\Debug\CRMDataImport.exe.config
+C:\Users\jterry\Documents\code.allegient.com\Our Sunday Visitor\Crm\CRMDataImportTest\bin\Debug\CRMDataImport.exe
+C:\Users\jterry\Documents\code.allegient.com\Our Sunday Visitor\Crm\CRMDataImportTest\bin\Debug\CRMDataImport.pdb
+C:\Users\jterry\Documents\code.allegient.com\Our Sunday Visitor\Crm\CRMDataImportTest\bin\Debug\Entities.dll
+C:\Users\jterry\Documents\code.allegient.com\Our Sunday Visitor\Crm\CRMDataImportTest\bin\Debug\log4net.dll
+C:\Users\jterry\Documents\code.allegient.com\Our Sunday Visitor\Crm\CRMDataImportTest\bin\Debug\microsoft.crm.sdk.proxy.dll
+C:\Users\jterry\Documents\code.allegient.com\Our Sunday Visitor\Crm\CRMDataImportTest\bin\Debug\microsoft.xrm.sdk.dll
+C:\Users\jterry\Documents\code.allegient.com\Our Sunday Visitor\Crm\CRMDataImportTest\bin\Debug\Entities.pdb
+C:\Users\jterry\Documents\code.allegient.com\Our Sunday Visitor\Crm\CRMDataImportTest\bin\Debug\log4net.xml
+C:\Users\jterry\Documents\code.allegient.com\Our Sunday Visitor\Crm\CRMDataImportTest\bin\Debug\microsoft.crm.sdk.proxy.xml
+C:\Users\jterry\Documents\code.allegient.com\Our Sunday Visitor\Crm\CRMDataImportTest\bin\Debug\microsoft.xrm.sdk.xml
+C:\Users\jterry\Documents\code.allegient.com\Our Sunday Visitor\Crm\CRMDataImportTest\obj\Debug\CRMDataImport.csprojResolveAssemblyReference.cache
+C:\Users\jterry\Documents\code.allegient.com\Our Sunday Visitor\Crm\CRMDataImportTest\obj\Debug\CRMDataImport.CRMInstanceConnectionInfo.resources
+C:\Users\jterry\Documents\code.allegient.com\Our Sunday Visitor\Crm\CRMDataImportTest\obj\Debug\CRMDataImport.DatabaseConnectionInfo.resources
+C:\Users\jterry\Documents\code.allegient.com\Our Sunday Visitor\Crm\CRMDataImportTest\obj\Debug\CRMDataImport.DataMigration.resources
+C:\Users\jterry\Documents\code.allegient.com\Our Sunday Visitor\Crm\CRMDataImportTest\obj\Debug\CRMDataImport.LogSettings.resources
+C:\Users\jterry\Documents\code.allegient.com\Our Sunday Visitor\Crm\CRMDataImportTest\obj\Debug\CRMDataImport.Properties.Resources.resources
+C:\Users\jterry\Documents\code.allegient.com\Our Sunday Visitor\Crm\CRMDataImportTest\obj\Debug\CRMDataImport.csproj.GenerateResource.Cache
+C:\Users\jterry\Documents\code.allegient.com\Our Sunday Visitor\Crm\CRMDataImportTest\obj\Debug\CRMDataImport.exe
+C:\Users\jterry\Documents\code.allegient.com\Our Sunday Visitor\Crm\CRMDataImportTest\obj\Debug\CRMDataImport.pdb
+C:\Users\m02519\Desktop\CRMDataImportTest-2014-08-11\CRMDataImportTest\bin\Debug\CRMDataImport.exe.config
+C:\Users\m02519\Desktop\CRMDataImportTest-2014-08-11\CRMDataImportTest\obj\Debug\CRMDataImport.exe
+C:\Users\m02519\Desktop\CRMDataImportTest-2014-08-11\CRMDataImportTest\obj\Debug\CRMDataImport.pdb
